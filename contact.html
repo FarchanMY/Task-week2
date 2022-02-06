@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icondu.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <title>Dumbways | Contact</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <img src="icondu1.png" alt="picture">
+        <ul>
+            <li><a href="index.html" target="blank">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- NAV BAR -->
+    <div class="container">
+        <div class="form-registrasi">
+            <div class="title">Contact Me</div>
+            <form action="#">
+            <div class="user-detail">
+                <div class="input-detail">
+                    <span class="detail">Nama Lengkap</span>
+                    <input class="text-input" id="name" type="text" placeholder="Farchan Mungis Y">
+                </div>
+                <div class="input-detail">
+                    <span class="detail">Email</span>
+                    <input class="text-input" id="email" type="text" placeholder="farhan.mungis@contoh.com">
+                </div>
+                <div class="input-detail">
+                    <span class="detail">Phone Number</span>
+                    <input class="text-input" id="phone" type="text" placeholder="0812-xxxx-xxx">
+                </div>
+                <div class="input-detail">
+                    <span class="detail">Subject</span>
+                     <select id="subject">
+                         <option value="" selected disabled hidden>Choose</option>
+                         <option value="Let's Talk">Let's Talk</option>
+                         <option value="Let's Hiring">Let's Hiring</option>
+                         <option value="Les't Collaboration">Let's Collaboration</option>
+                     </select>
+                </div>
+                <div class="input-detail">
+                    <span class="detail">Your Message</span>
+                    <textarea class="text-input" id="message" placeholder="Input Your Massage"></textarea>
+                </div>
+            </div>
+            <div class="button-submit">
+                <!-- <a href="mailto:farhan.mungis@outlook.co.id"> </a> -->
+                <button type="button" onclick="showData()">Submit</button>
+                
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
