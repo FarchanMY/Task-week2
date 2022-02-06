@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/icondu.png">
+    <link rel="stylesheet" href="stylee.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Dumbways | Blog</title>
+</head>
+<body>
+    <!--START NAV -->
+    <div id="fixedmenu">
+    <nav>
+        <div class="left-side">
+          <a href="index.html" id="logo">
+            <img src="assets/icondu1.png" alt="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="blog.html" class="list-active">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="contact.html"> Contact Me </a>
+        </div>
+      </nav>
+    </div>
+    <!--FINISH NAV -->
+
+    <!-- BLOG  -->
+    <!--START BLOG FORM -->
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+              <form onsubmit="addBlog(event)">
+                <h1>ADD MY PROJECT</h1>
+                <div>
+                  <label for="input-blog-title">Title</label>
+                  <input id="input-blog-title" />
+                </div>
+                <div class="date">
+                    <div class="star-date">
+                        <label for="star-date">Start Date</label>
+                        <input type="date" id="star-date">
+                    </div>
+                    <div class="end-date">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+                <div>
+                  <label for="input-blog-content">Content</label>
+                  <textarea id="input-blog-content"></textarea>
+                </div>
+                <div class="lable-checkbox">
+                    <label for="#">Technologies</label>
+                </div>
+                <div class="check-box" id="Technologies">
+                <div class="left-checkbox">
+                    <div>
+                    <input class="checkbox" type="checkbox" id="node-js" name="check" value="fab fa-node">
+                    <label for="node-js">Node Js</label>  
+                </div>
+                    <div>
+                    <input class="checkbox" type="checkbox"  id="react-js" name="check" value="fab fa-react">
+                    <label for="react-js">React Js</label>
+                    </div>
+                </div>
+                <div class="right-checkbox">
+                    <div>
+                    <input class="checkbox" type="checkbox"  id="java-1" name="check" value="fab fa-java">
+                    <label for="java-1">Java</label>
+                    </div>
+                    <div>
+                    <input class="checkbox" type="checkbox"  id="python-1" name="check" value="fab fa-python"> 
+                    <label for="python-1">Python</label>
+                    </div>
+                </div>
+                </div>
+                <div>
+                  <label>Upload Image</label>
+                  <div class="input-blog-image-group">
+                    <label for="input-blog-image">
+                      <p>Attach File</p>
+                      <img src="assets/file.png" alt="file" />
+                    </label>
+                    <input type="file" id="input-blog-image" hidden />
+                  </div>
+                </div>
+                <div class="button-group">
+                  <button>Post Blog</button>
+                </div>
+                <div id="testing">
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--FINISH BLOG FORM -->
+
+          <hr class="line"/>
+
+    <!--START MY PROJECT  -->
+    <div class="label-list-item">
+        <h1> MY PROJECT</h1>
+    </div>
+    <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/blog1.png" alt="" />
+          </div>
+          <div class="blog-content">
+            <h1>
+              <a href="detail-blog.html" target="_blank">Dumbways Mobile App - 2022</a>
+            </h1>
+            <div class="detail-blog-content">
+              Duration : 3 Bulan
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ducimus pariatur, odio consequatur placeat molestiae reiciendis ab dicta incidunt labore deserunt et minus alias illo quis architecto facere animi nesciunt.
+            </p>
+            <div class="icon-checkbox">
+              <p style="font-size: 25px;"><i class="fab fa-google-play"></i>     <i class="fab fa-app-store-ios"></i>     <i class="fab fa-js-square"></i>     <i class="fab fa-css3-alt"></i></p>
+            </div>
+            <div class="btn-group">
+                <button class="btn-edit">Edit</button>
+                <button class="btn-post">Delet</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    <!--FINISH MY PROJECT  -->
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/icondu.png">
+    <link rel="stylesheet" href="stylee.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Dumbways |Detail Blog</title>
+</head>
+<body>
+        <!--START NAV -->
+        <div id="fixedmenu">
+            <nav>
+                <div class="left-side">
+                  <a href="index.html" id="logo">
+                    <img src="assets/icondu1.png" alt="logo" />
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" class="list-active">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-side">
+                  <a href="contact.html"> Contact Me </a>
+                </div>
+              </nav>
+            </div>
+        <!--FINISH NAV -->
+        <div class="blog-detail">
+            <div class="title-blog-detail">
+                <h1>Dumbways Mobile App - 2022</h1>
+            </div>
+            <div class="blog-detail-container">
+            <div class="content-blog-detail" >
+                <div class="detail-left">
+                <img class="detai-blog-img" src="assets/blog1.png" alt="detail" />
+                </div>
+                <div class="detail-right">
+                    <div class="duration-detail-blog">
+                        <div>
+                          <h3>Duration</h3>
+                        </div>
+                        <div class="start-end">
+                        <p id="start-date-detail"><i class="fas fa-calendar-alt " ></i></p><p> || </p><p id="end-date-detail"></p>
+                        </div>
+                        <div class="distance-time-detail">
+                        <p id="distance-time"><i class="fas fa-clock "></i></p><p> Month</p>
+                        </div>
+                      </div>
+                    <div class="teknologi-detail-blog">
+                      <div>
+                        <h3>Technologies</h3>
+                      </div>
+                      <div class="icon-teknologi-blog-detail" > 
+                      <div>
+                        <p class="fab fa-react" >React Js</p>
+                        <p><i class="fab fa-node"></i> Node Js</p>
+                      </div>
+                      <div>
+                        <p><i class="fab fa-js-square"></i> JavaScript</p>
+                        <p><i class="fab fa-python"></i> Python</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+              <p class="isi-content">
+                Kehidupan manusia yang bermula dari kesederhanaan kini menjadi kehidupan yang bisa dikategorikan sangat modern. Di jaman yang semakin canggihnya teknologi informasi dan komunikasi yang berkembang  saat sekarang, segala sesuatu dapat diselesaikan dengan cara-cara yang praktis. Teknologi informasi dan komunikasi adalah sesuatu yang bermanfaat untuk mempermudah semua aspek kehidupan manusia. Dunia informasi saat ini seakan tidak bisa terlepas dari teknologi. Penggunaan teknologi informasi dan komunikasi oleh masyarakat menjadikan dunia teknologi semakin lama semakin canggih. <br>
+Dunia informasi saat ini seakan tidak bisa terlepas dari teknologi. Penggunaan teknologi oleh masyarakat menjadikan dunia teknologi semakin lama semakin canggih. Komunikasi yang dulunya memerlukan waktu yang lama dalam penyampaiannya, kini dengan teknologi segalanya menjadi sangat cepat dan seakan tanpa jarak.
+<br>
+Dengan kemajuan teknologi yang begitu pesat ini, pepatah yang menyatakan bahwa“Dunia tak selebar daun kelor” sepantasnya berubah menjadi “Dunia seakan selebar daun kelor”. Hal ini disebabkan karena semakin cepatnya akses informasi dalam kehidupan sehari-hari. Kita bisa mengetahui peristiwa yang sedang terjadi di daerah lain atau bahkan di negara lain, misalnya Amerika Serikat walaupun kita berada di Indonesia.
+<br>
+Salah satunya dalam bidang teknologi komunikasi seperti adanya smartphone dan internet, membuat manusia semakin meningkatkan cara komunikasinya. Berbagai macam media untuk berkomunikasi pun hadir untuk memudahkan manusia berinteraksi. Seiring dengan perkembangan zaman, teknologi internet sudah menjadi kebutuhan bagi masyarakat, hal inilah yang melahirkan media sosial. Media sosial merupakan media online, yaitu media yang hanya ada dengan menggunakan internet dimana para penggunanya bisa menuangkan ide, mengekspresikan diri, dan menggunakan sesuai dengan kebutuhannya. Kehadiran media sosial memberikan kemudahan bagi manusia untuk berkomunikasi dan bersosialisasi.
+<br>
+Menurut penelitian Center of Innovation Policy and Governance (CIPG) yang dirilis pekan lalu, saat ini laju penetrasi internet Indonesia merupakan yang tertinggi di Asia yang kini sudah mencapai 51%. Angka yang lebih fenomenal terlihat dari jumlah pengguna seluler. Di tahun 2016, diprediksi ada sekitar 371,4 juta nomor seluler yang aktif di Indonesia. Jumlah tersebut bahkan lebih besar dari pada proyeksi jumlah penduduk Indonesia yakni 261,89 juta penduduk.
+              </p>
+            </div>
+          </div>
+          <script >
+
+              let start_date = new Date('2021-04-01')
+              let end_date = new Date('2021-07-01')
+
+              document.getElementById('start-date-detail').innerHTML = start_date.toDateString();
+              document.getElementById('end-date-detail').innerHTML = end_date.toDateString();
+
+              const total_months = (end_date.getFullYear() - start_date.getFullYear())*12 + (end_date.getMonth() - start_date.getMonth())
+
+              document.getElementById('distance-time').innerHTML = total_months;
+
+          </script>
+</body>
+</html>
